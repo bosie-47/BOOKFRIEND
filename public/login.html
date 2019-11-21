@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>login</title>
+		<style>
+			img {
+				width: 1.06rem;
+				height: 1.03rem;
+			}
+			#logobox {
+				border: blue 1px solid;
+				width: 100%;
+				height: 1.03rem;
+				display: flex;
+				justify-content: center;
+				}
+			#login_item {
+				display: flex;
+				width: 3rem;
+				height: 2.0rem;
+				border: #0000FF 1px solid;
+				flex-wrap: wrap;
+				align-content: flex-end;
+				justify-content: center;
+			}
+			#container {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+				/*flex-direction: column;*/
+				flex-wrap: wrap;
+				margin-top: 1.03rem;
+			}
+			.span {
+				width: 3rem;
+				/*width: 300px;*/
+				height: 0.3rem;
+				border: 1px blue solid;
+			}
+			.account, .password {
+				padding: 0.03rem;
+				width: 1.8rem;
+				font-size: 0.18rem;
+				border: none;
+				outline: 0;
+				border-bottom:0.01rem black solid ;
+			}
+			.input_password, .input_account{
+				
+			}
+
+			a {
+				color: aqua;
+				text-decoration: none;
+			}
+			a:hover {
+				color: red;
+			}
+			.align_tool_1, .align_tool_2 {
+				margin-left: 0.3rem;
+			}
+			
+			.align_tool_3 {
+				margin-left: 2.2rem;
+				font-size: 0.15rem;
+			}
+			#button_container {
+				/*margin-left: 10rem;*/
+				height: 0.44rem;
+				margin-left: 0.9rem;
+			}
+			button {
+				background-color: white;
+				border: solid gray 0.01rem;
+				border-radius: 20% 20%;
+				height: 0.44rem;
+				width: 0.9rem;
+				font-size: 0.2rem;
+			}
+			
+			.login{
+				font-weight: bold;
+				font-size: 0.18rem;
+			}
+			.registry {
+				width: 0.7rem;
+				height: 0.4rem;
+				font-size: 0.1rem;
+				border: #0000FF 1px solid;
+				padding-left:0.2rem;
+			}
+		</style>
+		<script>
+			    
+			      ;(function (designWidth, maxWidth) {
+			        var doc = document,
+			            win = window;
+			        var docEl = doc.documentElement;
+			        var tid;
+			        var rootItem, rootStyle;
+			    
+			        function refreshRem() {
+			            var width = docEl.getBoundingClientRect().width;
+			            if (!maxWidth) {
+			                maxWidth = 540;
+			            }
+			            ;
+			            if (width > maxWidth) {
+			                width = maxWidth;
+			            }
+			            //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+			            var rem = width * 100 / designWidth;
+			            //兼容UC开始
+			            rootStyle = "html{font-size:" + rem + 'px !important}';
+			            rootItem = document.getElementById('rootsize') || document.createElement("style");
+			            if (!document.getElementById('rootsize')) {
+			                document.getElementsByTagName("head")[0].appendChild(rootItem);
+			                rootItem.id = 'rootsize';
+			            }
+			            if (rootItem.styleSheet) {
+			                rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+			            } else {
+			                try {
+			                    rootItem.innerHTML = rootStyle
+			                } catch (f) {
+			                    rootItem.innerText = rootStyle
+			                }
+			            }
+			            //兼容UC结束
+			            docEl.style.fontSize = rem + "px";
+			        };
+			        refreshRem();
+			    
+			        win.addEventListener("resize", function () {
+			            clearTimeout(tid); //防止执行两次
+			            tid = setTimeout(refreshRem, 300);
+			        }, false);
+			    
+			        win.addEventListener("pageshow", function (e) {
+			            if (e.persisted) { // 浏览器后退的时候重新计算
+			                clearTimeout(tid);
+			                tid = setTimeout(refreshRem, 300);
+			            }
+			        }, false);
+			    
+			        if (doc.readyState === "complete") {
+			            doc.body.style.fontSize = "16px";
+			        } else {
+			            doc.addEventListener("DOMContentLoaded", function (e) {
+			                doc.body.style.fontSize = "16px";
+			            }, false);
+			        }
+			    })(375, 750);
+			    
+		</script>
+	</head>
+	<body>
+		<div id="login">
+      <div id="container">
+		    <div id="logobox">
+				<img src=""  >
+			</div>
+		    <div id="login_item">
+				<span class="login span">
+					<div class="align_tool_1">
+						帐号:<span class="input_account"><input type="text" class="account" name="" id="" value="" /></span>
+					</div>
+				</span>
+				<span class="login span">
+					<div class="align_tool_2">
+						密码:<span class="input_password"><input type="password" class="password" name="" /></span>
+					</div>
+				</span>
+				<span class="span">
+					<div class="align_tool_3">
+						<a href="#">忘记密码</a>
+					</div>
+				</span>
+				<div id="button_container">
+					<span><button type="button">登录</button></span>
+				</div>
+				<div class="registry">还没有帐号？赶紧<a href="#">注册</a>一个吧！</div>
+			</div>
+      </div>
+    </div>
+	</body>
+</html>
