@@ -13,7 +13,7 @@
 			</span>
 			<span class="options">
 				<div class="align_tool_3">
-					<a href="#">注册</a>
+					<a href="./register">注册</a>
 					<a href="#">忘记密码</a>
 				</div>
 			</span>
