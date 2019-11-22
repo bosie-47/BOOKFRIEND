@@ -67,7 +67,8 @@ return {
     .information{
         height: 2.16rem;
         display: inline-flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        justify-items: flex-start;
     }
     #bookshelf,#personages{
         display: inline-flex;
