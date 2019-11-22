@@ -43,7 +43,7 @@
 return {
             account: '家园工作室',
             ID:'54321',
-            url:'https://img2.woyaogexing.com/2019/11/13/c9ebb22746a64e2a88b86d5c61ae8bb0!400x400.jpeg',
+            url:'',
             add:'3栋',
 
         };
@@ -62,9 +62,10 @@ return {
         height:0.4rem;
         display: inline-flex;
         justify-content: space-between;
+        align-items: center;
     }
     .information{
-        height: 2.5rem;
+        height: 2.16rem;
         display: inline-flex;
         justify-content: space-around;
     }
@@ -72,7 +73,7 @@ return {
         display: inline-flex;
 
     }
-    #pilot{             /*底栏*/
+    #pilot{         /*底栏*/
         border: 0.01rem solid lightgray;
         display: inline-flex;
         justify-content: space-around;
