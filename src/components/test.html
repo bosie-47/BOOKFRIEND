@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="body">
+    <div id ="container">
+        <div id ="cloumn">
+            <span id="back"></span>
+            <span id="publish"><button>发布</button></span>
+        </div>
+        <div id ="page">
+            <div id ="edit">
+                <input type="text" style="border: 0" placeholder="分享借用故事，说说借书过程中发生的有趣事吧。">
+                <div id="addpicture"></div>
+            </div>
+        </div>
+
+    </div>
+    </template>
+
+    <script>
+        export default {
+            name: "PublishPage"
+        }
+    </script>
+
+    <style scoped>
+        #body {
+            display: flex;
+            justify-content: center;
+            align-content: center
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 3.75rem;
+            height: 6.67rem;
+        }
+        #cloumn{
+            justify-content: space-around;
+            padding-top: 0;
+            width:3.75rem;
+            height:1rem;
+            border: 0.01rem solid black;
+        }
+
+        #page{
+            width: 3.75rem;
+            height:5.57rem;
+            justify-content: center;
+        }
+        #edit{
+            padding-top: 0.5rem;
+            width: 3.2rem;
+            height:2.5rem;
+            border: 0.01rem solid black;
+        }
+        #back{
+
+        }
+        #publish{
+            width: 0.32rem;
+            height:0.28rem;
+            border: 0.01rem solid black;
+            border-radius: 30%;
+
+        }
+
+
+    </style>
+</body>
+</html>
