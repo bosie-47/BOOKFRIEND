@@ -40,6 +40,7 @@
 	margin-top: .6rem;	
 	width: 3rem;
 	height: 2rem;
+
 	}
 
 #container {
@@ -86,6 +87,9 @@ a:hover {
 	padding: .08rem;
 	width: 2.2rem;
 	height: .25rem;
+	color: aqua;
+
+	background-color: white;
 	}
 		
 .align_tool_3 {
@@ -130,4 +134,9 @@ button:active {
 .login{
 	font-size: 0.12rem;
 	}
+
+body {
+	background-image:url('..\img\background.png');
+	background-size: 3.75rem 7.67rem;
+}
 </style>
