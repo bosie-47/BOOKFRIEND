@@ -41,7 +41,7 @@
         el: '.leftist',
         data: function() {
 return {
-            account: '家园工作室',
+            account: '家园室',
             ID:'54321',
             url:'',
             add:'3栋',

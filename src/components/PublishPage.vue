@@ -2,7 +2,7 @@
     <div id="body">
         <div id ="container">
             <div id ="choose" style="justify-content: space-between">
-                <div> </div><!--页面左上角的返回键，做不出来-->
+                <div> <button>返回</button></div><!--页面左上角的返回键，做不出来-->
                 <div><button class="publish">发布</button></div>
             </div>
             <div id ="page">
@@ -34,13 +34,14 @@
         display: flex;
         flex-direction: column;
         width: 3.65rem;
-        height: 6.67rem;
     }
     #choose{
         width:3.65rem;
         height:0.5rem;
         border: 0.01rem solid black;
-        justify-content: space-between;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     #page{
@@ -64,7 +65,6 @@
         background: cornflowerblue;
         font-size: 0.15rem;
         color: white;
-        margin-top: 0.1rem;
     }
     .publish:hover{
          background-color: dodgerblue;
@@ -107,6 +107,12 @@
     }
     #add:hover {
         color: gray;
+    }
+    button{
+        width: 0.5rem;
+        height:0.3rem;
+        border: 0;
+        background: white;
     }
 
 </style>

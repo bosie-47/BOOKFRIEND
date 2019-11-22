@@ -24,7 +24,7 @@ const routes = [
   {
     path:'/myself',
     component:Myself
-  }
+  },
 ]
 
 const router =new VueRouter({
