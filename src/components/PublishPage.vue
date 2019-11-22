@@ -61,12 +61,13 @@
         height:0.3rem;
         border: 0.01rem solid black;
         border-radius: 10%;
-        background: white;
+        background: cornflowerblue;
         font-size: 0.15rem;
+        color: white;
         margin-top: 0.1rem;
     }
     .publish:hover{
-         color: darkseagreen;
+         background-color: dodgerblue;
      }
     #edit {
         padding-top: 0;

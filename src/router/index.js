@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 const login = () => import('../components/login')
 const register = () => import('../components/register')
+const PublishPage = () => import('../components/PublishPage')
+const Myself = () => import('../components/Myself')
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,14 @@ const routes = [
   {
     path: '/register',
     component: register
+  },
+  {
+    path: '/publish',
+    component: PublishPage
+  },
+  {
+    path:'/myself',
+    component:Myself
   }
 ]
 
