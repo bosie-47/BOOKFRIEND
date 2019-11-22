@@ -3,7 +3,7 @@
     <div id="login_item">
       <span class="login span">
         <div class="align_tool_1">
-          帐号
+          学号
           <span class="input_account">
             <input type="text" class="account" name id value />
           </span>
