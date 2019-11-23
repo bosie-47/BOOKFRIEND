@@ -8,7 +8,7 @@
             <div id ="page">
                 <div id="box">
                     <div id ="edit">
-                        <textarea style="border: 0;width: 3.75rem"  placeholder="分享借用故事，说说借书过程中发生的有趣事吧。"></textarea>
+                        <textarea style="border: 0;width: 3.75rem;background: none transparent scroll repeat 0% 0%;"  placeholder="分享借用故事，说说借书过程中发生的有趣事吧。"></textarea>
                     </div>
                     <div id="add"> </div>
                 </div>
@@ -28,6 +28,8 @@
     #body {
         display: flex;
         justify-content: center;
+        background-image:url("..\img\background.png");
+        background-size: 3.75rem 7.67rem;
     }
 
     #container {
@@ -112,7 +114,7 @@
         width: 0.5rem;
         height:0.3rem;
         border: 0;
-        background: white;
+        background: none transparent scroll repeat 0% 0%;
     }
 
 </style>
